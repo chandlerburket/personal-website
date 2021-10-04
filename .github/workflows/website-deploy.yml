@@ -17,7 +17,7 @@ jobs:
           node-version: 12
       - run: npm install -g gatsby-cli
       - run: npm install --frozen-lockfile
-      - run: npm build
+      - run: gastby build
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.KEY }}
