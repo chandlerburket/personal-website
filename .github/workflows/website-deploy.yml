@@ -20,7 +20,7 @@ jobs:
       - run: npm build
       - uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.CHAN_AWS_ID }}
-          aws-secret-access-key: ${{ secrets.CHAN_AWS_KEY }}
+          aws-access-key-id: ${{ secrets.KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET }}
           aws-region: us-east-1
       - run: aws s3 cp ./dist s3://chandlerburket.com --recursive
