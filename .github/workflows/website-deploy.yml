@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main           
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.CHAN_AWS_ID }}
+          aws-secret-access-key: ${{ secrets.CHAN_AWS_KEY }}
+          aws-region: us-east-1
+      - name: Deploy
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: chandlerburket.com
