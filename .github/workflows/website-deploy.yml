@@ -1,0 +1,33 @@
+name: Chandler's Website CI/CD
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./gatsby-simplefolio
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install Project Dependencies
+        run: npm ci
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli@2.12.34
+      - name: Build
+        run: gatsby build
+      
+      - name: Verify build
+        run: ls -la public
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET }}
+          aws-region: us-east-1
+      - run: aws s3 cp ./public s3://chandlerburket.com --recursive
