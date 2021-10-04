@@ -1,9 +1,9 @@
 name: CD
 
 on:
-  release:
-    types: [published]
-
+  push:
+    branches:
+      - DEV-1 
 jobs:
   build-frontend:
     runs-on: ubuntu-latest
