@@ -23,4 +23,4 @@ jobs:
           aws-access-key-id: ${{ secrets.KEY }}
           aws-secret-access-key: ${{ secrets.SECRET }}
           aws-region: us-east-1
-      - run: aws s3 cp ./public_html s3://chandlerburket.com --recursive
+      - run: aws s3 cp ./public s3://chandlerburket.com --recursive
