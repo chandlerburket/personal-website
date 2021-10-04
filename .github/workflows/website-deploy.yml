@@ -15,10 +15,15 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install -g gatsby-cli
-      - run: npm install --frozen-lockfile
-      - run: gastby build
-      - uses: aws-actions/configure-aws-credentials@v1
+      - name: Install Project Dependencies
+        run: npm ci
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli@2.12.34
+      - name: Build
+        run: gatsby build
+      
+      - name: Verify build
+        run: ls -la public      - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.KEY }}
           aws-secret-access-key: ${{ secrets.SECRET }}
