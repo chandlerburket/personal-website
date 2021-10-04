@@ -15,9 +15,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install -g yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn generate
+    - run: npm install -g gatsby-cli
+      - run: npm install --frozen-lockfile
+      - run: gatsby build
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.CHAN_AWS_ID }}
