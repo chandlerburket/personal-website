@@ -28,21 +28,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'project1.jpg',
+    title: 'React Task Tracker',
+    info: 'A functional react js user interface used to keep track of tasks along with date and time. Taks can be added and removed along with reminders set with the data being saved with a json server backend',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/chandlerburket/react_task_tracker', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'project2.jpg',
+    title: 'React Calculator',
+    info: 'Responsive calculator with a react user interface capable of making standard calculations using math.js. The calculator allows positive and negative numbers as well as using exponential notation for large numbers unable to fit the screen. A hamburger menu in the top corner allows the user to see basic math formulas to aid in calculations.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/chandlerburket/react-calculator', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
