@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://chandler-docs-in.s3.us-east-2.amazonaws.com/Resume.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -46,12 +46,12 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'project3.jpg',
+    title: 'Beehive Honeypot',
+    info: 'A dockerized Wordpress honeypot that can be used to collect information and discourage malicious Wordpress attacks. The honeypot site uses the alpine linux ditribution, with an Apache server, and a sqlite database. The site is written in python and allows the user to add in any Wordpress plugins that they require.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/chandlerburket/Beehive', // if no repo, the button will not show up
   },
 ];
 
