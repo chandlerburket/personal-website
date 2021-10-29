@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -39,7 +39,7 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Focused on furthering my career in technology. My main focus is on software development but I also enjoy networking and ethical hacking. I mainly work with Python, Javascript, typically the react framework, along with HTML and CSS with Django as a backend framework. I am very fluent in linux based operating systems which are usually apart of my development environment but I am certainly familiar with macos and windows as well'}
+                    'Focused on furthering my career in technology. My main focus is on software development but I also enjoy networking and ethical hacking. I mainly work with Python, Javascript, typically the React framework, along with HTML and CSS with Django as a backend framework. I am very fluent in Linux based operating systems which are usually apart of my development environment but I am certainly familiar with macOS and Windows as well'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||

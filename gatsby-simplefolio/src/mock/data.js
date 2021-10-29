@@ -30,7 +30,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'project1.jpg',
     title: 'React Task Tracker',
-    info: 'A functional react js user interface used to keep track of tasks along with date and time. Taks can be added and removed along with reminders set with the data being saved with a json server backend',
+    info: 'A functional ReactJS user interface used to keep track of tasks along with date and time. Tasks can be added and removed along with setting reminders with the data being saved with a JSON server backend',
     info2: '',
     url: '',
     repo: 'https://github.com/chandlerburket/react_task_tracker', // if no repo, the button will not show up
@@ -39,7 +39,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'project2.jpg',
     title: 'React Calculator',
-    info: 'Responsive calculator with a react user interface capable of making standard calculations using math.js. The calculator allows positive and negative numbers as well as using exponential notation for large numbers unable to fit the screen. A hamburger menu in the top corner allows the user to see basic math formulas to aid in calculations.',
+    info: 'Responsive calculator with a React user interface capable of making standard calculations using math.js. The calculator allows positive and negative numbers as well as using exponential notation for large numbers unable to fit the screen. A hamburger menu in the top corner allows the user to see basic math formulas to aid in calculations.',
     info2: '',
     url: '',
     repo: 'https://github.com/chandlerburket/react-calculator', // if no repo, the button will not show up
@@ -48,7 +48,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'project3.jpg',
     title: 'Beehive Honeypot',
-    info: 'A dockerized Wordpress honeypot that can be used to collect information and discourage malicious Wordpress attacks. The honeypot site uses the alpine linux ditribution, with an Apache server, and a sqlite database. The site is written in python and allows the user to add in any Wordpress plugins that they require.',
+    info: 'A Dockerized Wordpress honeypot that can be used to collect information and discourage malicious Wordpress attacks. The honeypot site uses the Alpine Linux ditribution, with an Apache server, and a SQLite database. The site is written in Python and allows the user to add in any Wordpress plugins that they require.',
     info2: '',
     url: '',
     repo: 'https://github.com/chandlerburket/Beehive', // if no repo, the button will not show up
