@@ -39,7 +39,7 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Focused on furthering my career in technology. My main focus is on software development but I also enjoy networking and ethical hacking. I mainly work with Python, Javascript, typically the React framework, along with HTML and CSS with Django as a backend framework. I am very fluent in Linux based operating systems which are usually apart of my development environment but I am certainly familiar with macOS and Windows as well'}
+                    'Focused on furthering my career in technology. I am most fascinated with software development along with networking and ethical hacking. I mainly work with Python, Javascript, typically the React framework, along with HTML and CSS with Django as a backend framework. I am very fluent in Linux based operating systems which are usually apart of my development environment but I am certainly familiar with macOS and Windows as well. In my spare time I have also run many different types of servers either on Amazon Web Services or just running off devices on my home network.'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
