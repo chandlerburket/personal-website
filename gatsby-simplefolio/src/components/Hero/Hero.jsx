@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
+import ReactTypingEffect from 'react-typing-effect';
 import PortfolioContext from '../../context/context';
-import MyTypingEffect from './TypingEffect';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -21,6 +21,14 @@ const Header = () => {
       setIsDesktop(false);
     }
   }, []);
+
+  const MyTypingEffect = () => {
+    return (
+      <>
+        <ReactTypingEffect className="text-color-main" text={[name]} />
+      </>
+    );
+  };
 
   return (
     <section id="hero" className="jumbotron">
