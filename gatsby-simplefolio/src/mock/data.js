@@ -59,7 +59,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'chandlerburket@gmail.com',
 };
 
 // FOOTER DATA
